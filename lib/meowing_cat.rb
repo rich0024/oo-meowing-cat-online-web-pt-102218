@@ -12,5 +12,5 @@ class Cat
   end
 end
 
-cat_attributes([:name, :meow])
+cat_attributes([:name])
 end
