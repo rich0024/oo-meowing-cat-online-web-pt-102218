@@ -1,15 +1,16 @@
 ## code your solution here.
 class Cat
 
-  def cat_attributes(prop)
-      define_method(:"@#{prop}") do
-          instance_variable_set(:"@#{prop}")
-    end
-    define_method(:"#{prop}=") do |atr|
-      instance_variable_set(:"@#{prop}", atr)
-    end
+  def name=(name)
+    @name = name
   end
-end
 
-cat_attributes(:name)
+  def name
+    @name
+  end
+
+  def meow
+    puts "meow!"
+  end
+
 end
