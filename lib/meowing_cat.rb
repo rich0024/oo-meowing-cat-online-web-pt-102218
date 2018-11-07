@@ -12,5 +12,5 @@ class Cat
   end
 end
 
-cat_attributes([:name])
+self.cat_attributes([:name])
 end
