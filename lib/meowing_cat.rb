@@ -6,7 +6,7 @@ class Cat
       define_method(:"@#{prop}") do
           instance_variable_set(:"@#{prop}")
     end
-    define_method(:"@#{prop}=") do |atr|
+    define_method(:"#{prop}=") do |atr|
       instance_variable_set(:"@#{prop}", atr)
     end
   end
